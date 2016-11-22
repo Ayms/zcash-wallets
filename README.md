@@ -11,7 +11,7 @@ Create your Zcash t/z-addresses and wallets by your own and recover them from a 
 
 Please see [bitcoin-wallets](https://github.com/Ayms/bitcoin-wallets)
 
-Zcash's z-addresses are not trivial to generate, this is not used for bitcoin addresses but don't forget to copy [SHA256Compress.js](https://github.com/Ayms/bitcoin-wallets/tree/master/tests/SHA256Compress.js) for Zcash
+Zcash's z-addresses are not trivial to generate, this is not used for bitcoin addresses but don't forget to copy [SHA256Compress.js](https://github.com/Ayms/bitcoin-wallets/tree/master/SHA256Compress.js) for Zcash
 
 This might change in the future but for now z-addresses are derived from the hardened m/0/1 branch as defined in BIP32 with the first four bits of the private key set to 0 for the spending key (t-addresses are derived from the hardened m/0/0 branch like bitcoin core is doing)
 
@@ -61,7 +61,7 @@ Check that zcash-cli would generate the same keys:
 	 zcash-cli z_importkey SKxpnNaYmyqc7yB2fVxav6N1aGoJFrts3TnGUkEcF6dc7M3HXT4o
 	 zcash-cli z_exportwallet path/wallet.txt
 	 
-Added in wallet.txt:
+Check the last line of wallet.txt:
 	 
 	 SKxpnNaYmyqc7yB2fVxav6N1aGoJFrts3TnGUkEcF6dc7M3HXT4o 1970-01-01T00:00:00Z # zaddr=zcdejskXc37Gixc7dhe87ZCeaehSi7yHCCkiFhvav7aTxVY3RwXoV6dsu2hcNBVmW4vZHY9uWwCA4DrddwbjqFpMrguQoDW
 	
