@@ -64,6 +64,8 @@ Check that zcash-cli generates the same keys:
 Check the last line of wallet.txt:
 	 
 	 SKxpnNaYmyqc7yB2fVxav6N1aGoJFrts3TnGUkEcF6dc7M3HXT4o 1970-01-01T00:00:00Z # zaddr=zcdejskXc37Gixc7dhe87ZCeaehSi7yHCCkiFhvav7aTxVY3RwXoV6dsu2hcNBVmW4vZHY9uWwCA4DrddwbjqFpMrguQoDW
+	 
+Import your wallet: see z_importwallet in [Zcash payment API](https://github.com/zcash/zcash/blob/master/doc/payment-api.md)
 	
 ##Examples
 
