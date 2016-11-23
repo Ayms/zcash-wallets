@@ -1,7 +1,7 @@
 zcash-wallets
 ===
 
-Zcash wallets made simple, javascript implementation of [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) Bitcoin hierarchical deterministic keys for Zcash t and z-addresses
+Zcash wallets made simple, javascript implementation of [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) Bitcoin hierarchical deterministic keys for Zcash's t and z-addresses
 
 ##Rationale
 
@@ -11,13 +11,13 @@ Create your Zcash t/z-addresses and wallets by your own and recover them from a 
 
 Please see [bitcoin-wallets](https://github.com/Ayms/bitcoin-wallets)
 
-Zcash's z-addresses are not trivial to generate, this is not used for bitcoin addresses but don't forget to copy [SHA256Compress.js](https://github.com/Ayms/bitcoin-wallets/tree/master/SHA256Compress.js) for Zcash
+Zcash's z-addresses are not trivial to generate, this is not used for bitcoin addresses but you need [SHA256Compress.js](https://github.com/Ayms/bitcoin-wallets/tree/master/SHA256Compress.js) for Zcash
 
-This might change in the future but for now z-addresses are derived from the hardened m/0/1 branch as defined in BIP32 with the first four bits of the private key set to 0 for the spending key (t-addresses are derived from the hardened m/0/0 branch like bitcoin core is doing)
+This might change in the future but for now z-addresses are derived from the hardened m/0/1 branch as defined in BIP32 with the first four bits of the private keys set to 0 for the spending keys (t-addresses are derived from the hardened m/0/0 branch like bitcoin core is doing)
 
 ##Warning
 
-This has not been extensively tested for now, so please keep this in mind although we are confident that this is working correctly (and z-addresses derivation rules might change as explained above, so please backup too the code used at the time you generated your wallet) 
+This has not been extensively tested for now, although we are confident that this is working correctly (and z-addresses derivation rules might change as explained above, so please backup too the code used at the time you generated your wallet) 
 
 ## Use - Generate wallets
 	
@@ -56,7 +56,7 @@ Check that this is a valid z-address and that the keys are correct:
 		"ismine" : false
 	}
 
-Check that zcash-cli would generate the same keys:
+Check that zcash-cli generates the same keys:
 	
 	 zcash-cli z_importkey SKxpnNaYmyqc7yB2fVxav6N1aGoJFrts3TnGUkEcF6dc7M3HXT4o
 	 zcash-cli z_exportwallet path/wallet.txt
@@ -65,7 +65,7 @@ Check the last line of wallet.txt:
 	 
 	 SKxpnNaYmyqc7yB2fVxav6N1aGoJFrts3TnGUkEcF6dc7M3HXT4o 1970-01-01T00:00:00Z # zaddr=zcdejskXc37Gixc7dhe87ZCeaehSi7yHCCkiFhvav7aTxVY3RwXoV6dsu2hcNBVmW4vZHY9uWwCA4DrddwbjqFpMrguQoDW
 	
-##Example
+##Examples
 
 See [logz.txt](https://github.com/Ayms/bitcoin-wallets/tree/master/tests/logz.txt) and [walletz.txt](https://github.com/Ayms/bitcoin-wallets/tree/master/tests/walletz.txt)
 
