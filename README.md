@@ -25,6 +25,14 @@ Output is stored in wallet.txt, all details for the keys are stored in log.txt (
 
 	create_wallet(new Buffer('4ecf2e71d567072fe2f9cda40873afcaae4224e3f249018621a90dd43e88f8de','hex'),null,null,'zcash');
 	
+or with the secret option allowing not to store the master seed
+
+	create_wallet(new Buffer('4ecf2e71d567072fe2f9cda40873afcaae4224e3f249018621a90dd43e88f8de','hex'),true,null,'zcash');
+	
+or to generate more than 100 addresses:
+
+	create_wallet(new Buffer('4ecf2e71d567072fe2f9cda40873afcaae4224e3f249018621a90dd43e88f8de','hex'),null,1000,'zcash');
+	
 Output example in wallet.txt for z-addresses (last z-address generated in wallet.txt):
 
 	------------------------------------ depth 3 index hardened 99
