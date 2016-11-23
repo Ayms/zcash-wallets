@@ -17,7 +17,7 @@ This might change in the future but for now z-addresses are derived from the har
 
 ##Warning
 
-This has not been extensively tested for now, although we are confident that this is working correctly (and z-addresses derivation rules might change as explained above, so please backup too the code used at the time you generated your wallet) 
+This has not been extensively tested for now, although we are confident that this is working correctly (and z-addresses derivation rules might change as explained above, so please backup too the code used when you generate your wallet) 
 
 ## Use - Generate wallets
 	
