@@ -38,31 +38,28 @@ or to generate more than 100 addresses:
 Output example in wallet.txt for z-addresses (last z-address generated in wallet.txt):
 
 	------------------------------------ depth 3 index hardened 99
-	chain code: 70c3eb71d0790eb44d6889de84dbf425b890937a3ade659088ba829193153bf5
-	private key: 241ecfa0c6a57786dfb9b8f4ef2deb0b8fc857d253c1667746f4f0f29a61eeb2
-	public key: 04cf63f5bc1452c46aa264a01398ee739e0f2de37d6b686855d6f2b38309ba4d9b5e2960f6a2e05cbdc41b17abe88da0236cacac918f4f6cf10f1f7b2acd7b5954
-	public key (compact): 02cf63f5bc1452c46aa264a01398ee739e0f2de37d6b686855d6f2b38309ba4d9b
-	Extended private key: 33msrix1Pk6znGSspTeeh4gpy6A2H5GJkq4Q38js2n52F3HmyoF2DpQgx1p79DutKtxPoQZMgVZs9VZwZoxZhMmCnhu8iP6fpREPS9bGinkj9EQ3ybz
-	Extended public key: 33msrizgKy6MBmymeqCwuYmJ57h2eDD3JrttSbTiPzzd3RhPY8n16cjqVZ8Mh2ENBBHb7E1C7DqQKUxJnBfEAXyLkj1R9EpkQuSfmGzAThatRZWT1a7
-	address: t1MYprub2fNk48y37psz2E2rrj4QYRctYF8
-	
-	You don't really have to take care of the above, the important part is:
-
+	chain code: 5fe26266ced419847229c67c52cdcb27e7d0e30e19f93db29e43f85d90b11656
+	private key: 068bf5f79b8ffe10891474f24c32a5888c6ed1bb59750a0a4fa99421dd1b0cdf
+	public key: 0456b4bcc66c2d63134c85c39866b0275dfa55463ecbc50d2406038af54826a723a28d8b4ee8ede58115f13db1bd8ffc122a25f927991c2d41983e9f69cafb3d79
+	public key (compact): 0356b4bcc66c2d63134c85c39866b0275dfa55463ecbc50d2406038af54826a723
+	Extended private key: 33msrix1PjeQgRC1R53uFEpDYyykjijZizSUc3Bi6d1XvUjTzUksrXHw7Qh218ffCHmpDoSG6Pehh1BSSFMt6DXg1wjwUG6ghmTmHet727BRjFEAamA
+	Extended public key: 33msrizgKxdm5viuFScCTitgf1Wm6rgJH2Gy1VuZTqw8is95YpHrjKd5ex1GYvz93bMdQEBy4t2ZAC5L6sP1Ci5gNkFpYhPBvQ3bnScC7fADVzrWMWH
+	address: t1e44ZQHzUB6Q4MYLRvQdzGu9NbexPuMvwd
 	------------------------------------ depth 3 index hardened 99
-	spending key: 041ecfa0c6a57786dfb9b8f4ef2deb0b8fc857d253c1667746f4f0f29a61eeb2
-	paying key: 504e39ef8d2b36c3cbcccaffd5e2e97d21163f20d7fa0859f716b464c1f7e9e0
-	transmission key: 5661ac798de6f48301db7856546d521808ad0096877ad147172b6827dc210fc3
-	spending key address: SKxpnNaYmyqc7yB2fVxav6N1aGoJFrts3TnGUkEcF6dc7M3HXT4o
-	z-address: zcdejskXc37Gixc7dhe87ZCeaehSi7yHCCkiFhvav7aTxVY3RwXoV6dsu2hcNBVmW4vZHY9uWwCA4DrddwbjqFpMrguQoDW
+	spending key: 0fbab70eb70f8d5a99e32621c990edc960852b84cf41a4efeee4ef08538ca4fa
+	paying key: 67b6baa929cd8793d0c49afb9ac9efc851ad915f502f801f9c6e281a0c9c6cae
+	transmission key: 63b706663a1dbd57d1efc1e00b40e8c2226b2c42d4dd4369f214e688df1fa2fe
+	spending key address: SKxutugkTFsubPcuWfq12DUU2vDDiUhg8LP834FPiFwYvPTuYF9W
+	z-address: zcX3d1ppxo71Xrvk4p5JtvFCxob2uYFuVfJ2gphSzb2taZpqrTrSZYXXW7a8By4aa4coC9Lh5aQF48gW9X8gqZbsRDwwm79
 
 Check that this is a valid z-address and that the keys are correct:
 	
-	zcash-cli z_validateaddress  zcdejskXc37Gixc7dhe87ZCeaehSi7yHCCkiFhvav7aTxVY3RwXoV6dsu2hcNBVmW4vZHY9uWwCA4DrddwbjqFpMrguQoDW
+	zcash-cli z_validateaddress zcX3d1ppxo71Xrvk4p5JtvFCxob2uYFuVfJ2gphSzb2taZpqrTrSZYXXW7a8By4aa4coC9Lh5aQF48gW9X8gqZbsRDwwm79
 	{
 		"isvalid" : true,
-		"address" : "zcdejskXc37Gixc7dhe87ZCeaehSi7yHCCkiFhvav7aTxVY3RwXoV6dsu2hcNBVmW4vZHY9uWwCA4DrddwbjqFpMrguQoDW",
-		"payingkey" : "504e39ef8d2b36c3cbcccaffd5e2e97d21163f20d7fa0859f716b464c1f7e9e0",
-		"transmissionkey" : "5661ac798de6f48301db7856546d521808ad0096877ad147172b6827dc210fc3",
+		"address" : "zcX3d1ppxo71Xrvk4p5JtvFCxob2uYFuVfJ2gphSzb2taZpqrTrSZYXXW7a8By4aa4coC9Lh5aQF48gW9X8gqZbsRDwwm79",
+		"payingkey" : "67b6baa929cd8793d0c49afb9ac9efc851ad915f502f801f9c6e281a0c9c6cae",
+		"transmissionkey" : "63b706663a1dbd57d1efc1e00b40e8c2226b2c42d4dd4369f214e688df1fa2fe",
 		"ismine" : false
 	}
 
@@ -71,9 +68,9 @@ Check that zcash-cli generates the same keys:
 	 zcash-cli z_importkey SKxpnNaYmyqc7yB2fVxav6N1aGoJFrts3TnGUkEcF6dc7M3HXT4o rescan=false
 	 zcash-cli z_exportwallet path/wallet.txt
 	 
-Check the last line of wallet.txt:
+Check in wallet.txt:
 	 
-	 SKxpnNaYmyqc7yB2fVxav6N1aGoJFrts3TnGUkEcF6dc7M3HXT4o 1970-01-01T00:00:00Z # zaddr=zcdejskXc37Gixc7dhe87ZCeaehSi7yHCCkiFhvav7aTxVY3RwXoV6dsu2hcNBVmW4vZHY9uWwCA4DrddwbjqFpMrguQoDW
+	 SKxutugkTFsubPcuWfq12DUU2vDDiUhg8LP834FPiFwYvPTuYF9W 1970-01-01T00:00:00Z # zaddr=zcX3d1ppxo71Xrvk4p5JtvFCxob2uYFuVfJ2gphSzb2taZpqrTrSZYXXW7a8By4aa4coC9Lh5aQF48gW9X8gqZbsRDwwm79
 	 
 Import your wallet: see z_importwallet in [Zcash payment API](https://github.com/zcash/zcash/blob/master/doc/payment-api.md)
 
