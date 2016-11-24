@@ -13,7 +13,7 @@ Please see [bitcoin-wallets](https://github.com/Ayms/bitcoin-wallets)
 
 Zcash's z-addresses are not trivial to generate, this is not used for bitcoin addresses but you need [SHA256Compress.js](https://github.com/Ayms/bitcoin-wallets/tree/master/SHA256Compress.js) for Zcash
 
-This might change in the future but for now z-addresses are derived from the hardened m/0/1 branch as defined in BIP32 with the first four bits of the private keys set to 0 for the spending keys (t-addresses are derived from the hardened m/0/0 branch like bitcoin core is doing)
+z-addresses are derived from a Zcash computation of the private keys belonging to the hardened m/n/0 branch as defined in BIP32 where n is the SUPER_MAGIC number, please see the code for more details, this might change in the future
 
 ##Warning
 
