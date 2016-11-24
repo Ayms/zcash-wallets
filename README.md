@@ -45,6 +45,9 @@ Output example in wallet.txt for z-addresses (last z-address generated in wallet
 	Extended private key: 33msrix1PjeQgRC1R53uFEpDYyykjijZizSUc3Bi6d1XvUjTzUksrXHw7Qh218ffCHmpDoSG6Pehh1BSSFMt6DXg1wjwUG6ghmTmHet727BRjFEAamA
 	Extended public key: 33msrizgKxdm5viuFScCTitgf1Wm6rgJH2Gy1VuZTqw8is95YpHrjKd5ex1GYvz93bMdQEBy4t2ZAC5L6sP1Ci5gNkFpYhPBvQ3bnScC7fADVzrWMWH
 	address: t1e44ZQHzUB6Q4MYLRvQdzGu9NbexPuMvwd
+	
+	You don't really care of the above, the important part is:
+	
 	------------------------------------ depth 3 index hardened 99
 	spending key: 0fbab70eb70f8d5a99e32621c990edc960852b84cf41a4efeee4ef08538ca4fa
 	paying key: 67b6baa929cd8793d0c49afb9ac9efc851ad915f502f801f9c6e281a0c9c6cae
