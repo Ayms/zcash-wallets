@@ -17,7 +17,9 @@ This might change in the future but for now z-addresses are derived from the har
 
 ##Warning
 
-This has not been extensively tested for now, although we are confident that this is working correctly (and z-addresses derivation rules might change as explained above, so please backup too the code used when you generate your wallet) 
+This has not been extensively tested for now, although we are confident that this is working correctly (and z-addresses derivation rules might change as explained above, so please backup too the code used when you generate your wallet)
+
+Before using it you might consider reading [Bug 1893](https://github.com/zcash/zcash/issues/1893)
 
 ## Use - Generate wallets
 	
@@ -66,7 +68,7 @@ Check that this is a valid z-address and that the keys are correct:
 
 Check that zcash-cli generates the same keys:
 	
-	 zcash-cli z_importkey SKxpnNaYmyqc7yB2fVxav6N1aGoJFrts3TnGUkEcF6dc7M3HXT4o
+	 zcash-cli z_importkey SKxpnNaYmyqc7yB2fVxav6N1aGoJFrts3TnGUkEcF6dc7M3HXT4o rescan=false
 	 zcash-cli z_exportwallet path/wallet.txt
 	 
 Check the last line of wallet.txt:
@@ -74,6 +76,8 @@ Check the last line of wallet.txt:
 	 SKxpnNaYmyqc7yB2fVxav6N1aGoJFrts3TnGUkEcF6dc7M3HXT4o 1970-01-01T00:00:00Z # zaddr=zcdejskXc37Gixc7dhe87ZCeaehSi7yHCCkiFhvav7aTxVY3RwXoV6dsu2hcNBVmW4vZHY9uWwCA4DrddwbjqFpMrguQoDW
 	 
 Import your wallet: see z_importwallet in [Zcash payment API](https://github.com/zcash/zcash/blob/master/doc/payment-api.md)
+
+Note: z-addresses are commented in wallet.txt, uncomment those that you want to use
 	
 ##Examples
 
