@@ -68,7 +68,7 @@ Check that this is a valid z-address and that the keys are correct:
 
 Check that zcash-cli generates the same keys:
 	
-	 zcash-cli z_importkey SKxpnNaYmyqc7yB2fVxav6N1aGoJFrts3TnGUkEcF6dc7M3HXT4o rescan=false
+	 zcash-cli z_importkey SKxutugkTFsubPcuWfq12DUU2vDDiUhg8LP834FPiFwYvPTuYF9W false
 	 zcash-cli z_exportwallet path/wallet.txt
 	 
 Check in wallet.txt:
