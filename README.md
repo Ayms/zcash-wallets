@@ -3,11 +3,11 @@ zcash-wallets
 
 Zcash wallets made simple, javascript implementation of [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) Bitcoin hierarchical deterministic keys for Zcash's t and z-addresses
 
-##Rationale
+## Rationale
 
 Create your Zcash t/z-addresses and wallets by your own and recover them from a seed you know if you lose them, this eliminates the constant need of wallets backup with the associated risks and this eliminates the risk of losing all of your addresses
 
-##Implementation, Details and Installation
+## Implementation, Details and Installation
 
 Please see [bitcoin-wallets](https://github.com/Ayms/bitcoin-wallets)
 
@@ -15,7 +15,7 @@ Zcash's z-addresses are not trivial to generate, this is not used for bitcoin ad
 
 z-addresses are derived from a Zcash computation of the private keys belonging to the hardened m/n/0 branch as defined in BIP32 where n is the SUPER_MAGIC number, please see the code for more details, this might change in the future
 
-##Warning
+## Warning
 
 This has not been extensively tested for now, although we are confident that this is working correctly (and z-addresses derivation rules might change as explained above, so please backup too the code used when you generate your wallet)
 
@@ -79,11 +79,11 @@ Import your wallet: see z_importwallet in [Zcash payment API](https://github.com
 
 Note: z-addresses are commented in wallet.txt, uncomment those that you want to use
 	
-##Examples
+## Examples
 
 See [logz.txt](https://github.com/Ayms/bitcoin-wallets/tree/master/tests/logz.txt) and [walletz.txt](https://github.com/Ayms/bitcoin-wallets/tree/master/tests/walletz.txt)
 
-##License
+## License
 
 MIT
 
