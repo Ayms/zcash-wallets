@@ -3,6 +3,10 @@ zcash-wallets
 
 Zcash wallets made simple, javascript implementation of [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) Bitcoin hierarchical deterministic keys for Zcash's t and z-addresses
 
+## History
+
+<b>Please note that this module is now deprecated, please see [bitcoin-transactions](https://github.com/Ayms/bitcoin-transactions) since it has been merged there</b>
+
 ## Rationale
 
 Create your Zcash t/z-addresses and wallets by your own and recover them from a seed you know if you lose them, this eliminates the constant need of wallets backup with the associated risks and this eliminates the risk of losing all of your addresses
